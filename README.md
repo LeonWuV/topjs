@@ -1,6 +1,6 @@
 ### 使用文档说明
 #### 前言
-top.js是一个体积小、支持自定义、灵活、使用简单、纯原生实现的回到顶部的插件；
+top.js是一个体积小、支持自定义、灵活、使用简单、纯原生实现的带动画效果回到顶部的插件；
 #### 看看效果
 [线上效果：http://xiaolongwu.cn/topjsDemo/demo.html](http://xiaolongwu.cn/topjsDemo/demo.html)
 
