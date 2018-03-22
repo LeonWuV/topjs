@@ -1,6 +1,8 @@
 ### 使用文档说明
 #### 前言
 top.js是一个体积小、支持自定义、灵活、使用简单、纯原生实现的回到顶部的插件；
+#### 看看效果
+![topjs效果图](https://raw.githubusercontent.com/LeonWuV/topjs/master/img/topjs_2.gif)
 #### 使用指南
 1. 将top.js引用到项目中；
 
