@@ -1,8 +1,8 @@
 <!-- /*
- * @Author: leonWu(wuxiaolong) 
- * @Date: 2018-03-22 14:08:14 
- * @Last Modified by:   wuxiaolong 
- * @Last Modified time: 2018-03-22 14:08:14 
+ * @Author: leonWu(wuxiaolong)
+ * @Date: 2018-03-22 14:08:14
+ * @Last Modified by:   wuxiaolong
+ * @Last Modified time: 2018-03-22 14:08:14
  */ -->
 <!DOCTYPE html>
 <html lang="en">
@@ -11,76 +11,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>back to top demo</title>
-    <script src="../dist/top.js"></script>
+    <script src="./dist/top.js"></script>
     <script>
         window.onload = function(){
 
             // new Top({s:180,th:400,w:20,h:20});
-            new Top({s:180,th:400,w:50,h:50,dImg:"../img/up-db.png"});
+            new Top({s:180,th:400,w:50,h:50,dImg:"./img/up-db.png"});
         }
-                  
+
     </script>
 </head>
 <body>
     <div style="width:40px;background:cyan;">
             babel 是什么？
             Babel · The compiler for writing next generation JavaScript
-            
+
             6to5
             你在 npm上可以看到这样一个包名字是6to5（https://www.npmjs.com/package/6to5），光看名字可能会让人感觉到很诧异，名字看起来可能有点奇怪，其实 babel 在开始的时候名字就是这个。简单粗暴 es6->es5，一下子就看懂了 babel 是用来干啥的，但是很明显这不是一个好名字，这个名字会让人感觉到 es6普及之后这个库就没用了，为了保持活力这个库可能要不停的修改名字。下面是 babel作者一次分享中假设如果按这个命名法则可能出现的名称。
-            
-            
-            
+
+
+
             很明显发生这种情况是很不合理的，团队内部经过大量讨论后，最终选择了 babel,这与电影银河系漫游指南中的Babel fish相应，也有关系到圣经中的一个故事Tower of Babel(https://en.wikipedia.org/wiki/TowerofBabel)。（ps.优秀的人总是也很有情怀。）
-            
+
             babel is the new jQuery
             redux 的作者曾说过这样一句话，可以换一种理解为
-            
+
             babel : AST :: jQuery : DOM
-            
+
             babel 对于 AST 就相当于 jQuery 对于 DOM, 就是说 babel给予了我们便捷查询和修改 AST 的能力。 AST->AbstractSyntaxTree 抽象语法树 后面会讲到。
-            
+
             为什么要用babel转换代码
             我们之前做一些兼容都会都会接触一些 Polyfill 的概念，比如如果某个版本的浏览器不支持 Array.prototype.find 方法,但是我们的代码中有用到 Array 的 find 函数，为了支持这些代码，我们会人为的加一些兼容代码。
-            
+
             if
              (!
             Array
             .prototype.find) {
-            
-              
+
+
             Object
             .defineProperty(
             Array
-            .prototype, 
+            .prototype,
             'find'
             , {
-            
-                  
+
+
             // 实现代码
-            
+
                   ...
-            
+
               });
-            
+
             }
-            
+
             对于这种情况做兼容也很好实现，引入一个 Polyfill 文件就可以了，但是有一些情况我们使用到了一些新语法，或者一些其他写法：
-            
+
             // 箭头函数
-            
+
             var
              a = () => {}
-            
+
             // jsx
-            
+
             var
-             
+
             Component
              = () => <div />
-            
+
             这种情况靠 Polyfill，因为一些浏览器根本就不识别这些代码,这时候就需要把这些代码转换成浏览器识别的代码。 babel就是做这个事情的。
-            
+
             babel做了哪些事情
     </div>
 </body>
